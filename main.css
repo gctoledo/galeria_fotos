@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: #5f27cd; 
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    color: #fff;
+    border-bottom: 16px solid #341f97;
+    text-transform: uppercase;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+button {
+    background-color: #009432;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input, button {
+    padding: 10px;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    position: relative;
+    list-style: none;
+    max-height: 250px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+}
+
+.url-tab {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 15px;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.url-tab a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cancelar-buttom-style {
+    background-color: red;
+}
+
+ul li:hover .url-tab {
+    opacity: 1;
+}

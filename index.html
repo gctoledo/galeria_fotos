@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Galeria de fotos</title>
+</head>
+<body>
+    <header>
+        <h1>Galeria de fotos</h1>
+        <button id="adicionar-imagem-button" type="button">Nova imagem +</button>
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="endereco-imagem-nova" placeholder="Endereco da imagem">
+        <button type="submit">Adicionar</button>
+        <button id="cancelar-buttom" type="reset" class="cancelar-buttom-style">Cancelar</button>
+    </form>
+    <ul id="lista-fotos">
+        <li>
+            <img src="./images/foto1.jpg" alt="Foto 1" />
+            <div class="url-tab">
+                <a href="./images/foto1.jpg" target="_blank">Ver a foto em tamanho real</a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
